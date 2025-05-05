@@ -3,10 +3,11 @@ let todoList = [{
   dueDate: '2025-03-6'
 }];
 
-
+//renders on the page
 render();
 
 function render(){
+  //accumulator pattern vaiable
   let todoListHTML = '';
 
   for (let i = 0; i< todoList.length; i++){
@@ -27,7 +28,7 @@ function render(){
 
   document.querySelector('.todo-container').innerHTML = todoListHTML;
 }
-
+//newtodo adder function
 function addTodo(){
   let inputElement = document.querySelector('.js-input');
   let name = inputElement.value;
